@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lib_dzne_workbook"
-version = "0.4.0"
+version = "0.4.1"
 description = "Library for handling workbooks."
 readme = "README.rst"
 authors = [
@@ -30,4 +30,5 @@ file = "LICENSE.txt"
 
 [project.urls]
 Download = "https://pypi.org/project/lib-dzne-workbook/#files"
+Source = "https://github.com/johannes-programming/lib_dzne_workbook"
 

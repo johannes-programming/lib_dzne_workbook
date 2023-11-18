@@ -21,6 +21,12 @@ License
 
 This project is licensed under the MIT License.
 
+Links
+-----
+
+* `Download <https://pypi.org/project/lib-dzne-workbook/#files>`_
+* `Source <https://github.com/johannes-programming/lib_dzne_workbook>`_
+
 Credits
 -------
 - Author: Johannes
