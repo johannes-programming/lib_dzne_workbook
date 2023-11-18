@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lib_dzne_workbook"
-version = "0.2.1"
+version = "0.4.0"
 description = "Library for handling workbooks."
 readme = "README.rst"
 authors = [
