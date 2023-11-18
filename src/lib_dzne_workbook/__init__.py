@@ -68,9 +68,9 @@ class WorkbookData(_fd.FileData):
         #masterrow = BASE.config.get_config()['masterfile']['keyrow']
         wb = self.data
         if sheetname is None:
-            ws = wb[sheetname]
-        else:
             ws = wb.active
+        else:
+            ws = wb[sheetname]
         for colnum in range(1, ws.max_column + 1):
             currentcell = ws.cell(column=colnum, row=masterrow)
             value = currentcell.value
@@ -84,7 +84,7 @@ class WorkbookData(_fd.FileData):
             if value not in dataFrame.columns:
                 self._set_cell(cell=currentcell, value="")
                 continue
-            for i, newvalue in enumerate(df[value].tolist()):
+            for i, newvalue in enumerate(dataFrame[value].tolist()):
                 datacell = ws.cell(column=colnum, row=masterrow+i)
                 self._set_cell(cell=datacell, value=None if _pd.isna(newvalue) else newvalue)
         self.data = wb
