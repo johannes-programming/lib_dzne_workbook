@@ -1,24 +1,33 @@
 [build-system]
-requires = ["setuptools>=61.0.0"]
+requires = [
+    "setuptools>=61.0.0",
+]
 build-backend = "setuptools.build_meta"
 
-
 [project]
-name = "lib-dzne-workbook"
-version = "0.3.0"
-description = "Libary for handling workbooks. "
-license = { file = "LICENSE" }
-authors = [{ name = "Johannes Horler", email = "johannes.horler@dzne.de" }]
+name = "lib_dzne_workbook"
+version = "0.2.1"
+description = "Library for handling workbooks."
+readme = "README.rst"
+authors = [
+    { name = "Johannes", email = "johannes-programming@posteo.org" },
+]
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
-keywords = ['dzne']
+keywords = []
 dependencies = [
     'pandas>=1.4.2',
     'openpyxl>=3.0.10',
     'lib-dzne-filedata',
 ]
 requires-python = ">=3.11"
+
+[project.license]
+file = "LICENSE.txt"
+
+[project.urls]
+Download = "https://pypi.org/project/lib-dzne-workbook/#files"
 
