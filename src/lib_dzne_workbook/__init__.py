@@ -67,5 +67,3 @@ class WorkbookData(_fd.FileData):
         cell.value = value
         cell.alignment = _xl.styles.Alignment()#horizontal='general')
 
-
-
